@@ -34,7 +34,6 @@ public class Menu {
                     System.out.println("You chose to create a order: ");
                     System.out.println();
                     newOrder();
-                    //Controller to add the pizza to the arraylist etc.
                     mainMenu();
                     break;
 
@@ -53,6 +52,7 @@ public class Menu {
                     int enterPassword = scanner.nextInt();
                     if (enterPassword == 45678) {
                         loginMenu.advancedLoginMenu();
+                        mainMenu();
                     }
                     else if (enterPassword != 45678) {
                         System.out.println("Error, wrong password!\n" + "You will be sent back to the menu");
@@ -75,8 +75,6 @@ public class Menu {
 
                 case 6:
                     break;
-
-
             }
         }
 
@@ -111,7 +109,6 @@ public class Menu {
             if(userInput.nextInt() == 0) {
                 return;
             } else newOrderAddPizza(newOrder);
-
 
         }
 

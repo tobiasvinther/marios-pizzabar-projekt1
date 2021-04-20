@@ -31,7 +31,10 @@ public class Main {
 
         //start the main menu
         Menu menu = new Menu();
+
+
         menu.mainMenu();
+
 
     }
 
