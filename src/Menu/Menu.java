@@ -102,6 +102,8 @@ public class Menu {
             System.out.print("This is the pick up time: ");
             LocalTime pickUpTime = controller.getPickupTime(newOrder);
             System.out.println(pickUpTime);
+            controller.addOrderToStatistics(newOrder);
+
 
         }
 
