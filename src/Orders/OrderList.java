@@ -3,6 +3,7 @@ package Orders;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import Statistics.Statistics;
 
 public class OrderList {
 
@@ -27,10 +28,12 @@ public class OrderList {
         }
     }
 
-    //add order to list of orders
+    //add order to list of orders (and also to statistics)
     public void addToListOfOrders(Order thisOrder) {
         listOfOrders.add(thisOrder);
+        Statistics.allOrders.add(thisOrder);
     }
+
 
     //remove order from list of orders (by ID)
     public void removeFromListOfOrders(int orderIDToRemove) {

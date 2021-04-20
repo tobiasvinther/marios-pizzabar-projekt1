@@ -41,10 +41,6 @@ public class Controller {
         return order.getPickupTime();
     }
 
-    public void addOrderToStatistics (Order order) {
-        statistics.allOrders.add(order);
-    }
-
     //remove with name. Not used
     public void removeFromListOfOrders(String nameOfCustomer) {
         orderList.removeFromListOfOrders(nameOfCustomer);

@@ -88,22 +88,12 @@ public class Menu {
             String name = userInput.nextLine();
             Order newOrder = controller.createNewOrder(name);
             newOrderAddPizza(newOrder);
-            /*
-            System.out.println("Enter the pizza ID: ");
-            int pizzaID = userInput.nextInt();
-            System.out.println("How many pizzas?");
-            int quantity = userInput.nextInt();
-            controller.addPizzaToOrder(newOrder, pizzaID, quantity);
-            //userInput.nextLine();
-             */
             System.out.println("Any comments to the order? etc +/-: ");
             String comment = userInput.nextLine();
             controller.addCommentToOrder(newOrder, comment);
             System.out.print("This is the pick up time: ");
             LocalTime pickUpTime = controller.getPickupTime(newOrder);
             System.out.println(pickUpTime);
-            controller.addOrderToStatistics(newOrder);
-
 
         }
 

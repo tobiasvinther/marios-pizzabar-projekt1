@@ -10,7 +10,7 @@ public class Statistics {
 
     OrderList ol = new OrderList();
 
-    public ArrayList<Order> allOrders = new ArrayList<>();
+    public static ArrayList<Order> allOrders = new ArrayList<>();
     //public ArrayList<Order> allOrders = ol.getListOfOrders();
 
     public void amountSoldOfEachPizza() {
