@@ -31,6 +31,7 @@ public class Order {
         this.pickupTime = pickupTime;
     }
 
+    //getters and setters
     public ArrayList<Pizza> getPizzasInThisOrder() {
         return this.pizzasInThisOrder;
     }

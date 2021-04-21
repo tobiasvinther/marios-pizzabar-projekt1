@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class Statistics {
 
-    OrderList ol = new OrderList();
-
     public static ArrayList<Order> allOrders = new ArrayList<>();
-    //public ArrayList<Order> allOrders = ol.getListOfOrders();
 
     public void amountSoldOfEachPizza() {
 

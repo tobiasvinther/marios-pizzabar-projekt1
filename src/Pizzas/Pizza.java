@@ -26,6 +26,7 @@ public class Pizza {
         return price;
     }
 
+    //prints out a pizza nicely
     @Override
     public String toString() {
 

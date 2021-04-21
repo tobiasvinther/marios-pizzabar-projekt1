@@ -7,7 +7,7 @@ import Statistics.Statistics;
 
 public class OrderList {
 
-    private static int waitTime = 0; //
+    private static int waitTime = 0; //wait time in minutes based on number of pizzas in the listOfOrders
     private final int COOK_TIME = 10; //minutes to cook one pizza
     private static ArrayList<Order> listOfOrders = new ArrayList<>(); //static because we only want one to exist
 
@@ -83,13 +83,4 @@ public class OrderList {
         return time;
     }
 
-    /*
-    //not done, trying to sort. Maybe look at bubble sort
-    public void sortOrderByPickupTime() {
-        //go through list of orders...
-        for (int i=0; i< listOfOrders.size(); i++) {
-            listOfOrders.get(i).getPickupTime().isAfter(listOfOrders.get(i+1).getPickupTime());
-            }
-        }
-     */
 }

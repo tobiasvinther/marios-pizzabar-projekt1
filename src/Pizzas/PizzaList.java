@@ -31,12 +31,6 @@ public class PizzaList {
 
             pizzaList.add(tempPizza); //Then add them to the arrayList
         }
-
-        /*
-        for (Pizza pizza : pizzaList) {
-            System.out.println(pizza);
-        }
-         */
     }
 
     public ArrayList<Pizza> getPizzaList() {
