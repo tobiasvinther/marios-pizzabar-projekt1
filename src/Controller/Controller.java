@@ -36,9 +36,9 @@ public class Controller {
     //returns pickupTime for an order and puts it in the list of orders
     public LocalTime getPickupTime(Order order) {
         orderList.calculateWaitTime();
+        orderList.addToListOfOrders(order);
         LocalTime time = orderList.calculateTimeToPickup();
         order.setPickupTime(time);
-        orderList.addToListOfOrders(order);
         return order.getPickupTime();
     }
 

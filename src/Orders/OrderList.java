@@ -44,6 +44,7 @@ public class OrderList {
     //call to calculate waiting time (in minutes) based on how many pizzas are currently waiting to be made
     public void calculateWaitTime() {
         //go through list of orders...
+        waitTime = 0;
         for (Order order : listOfOrders) {
             //and then, in each order, check how large the getPizzaLineItemList() (which indicates the number of pizzas
             //in that order) and then add COOK_TIME to waitTime for each pizza
