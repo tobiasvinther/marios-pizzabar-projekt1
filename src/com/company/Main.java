@@ -10,12 +10,11 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
-        PizzaList.createPizzaList(); //initialize the pizzaList (the menu containing all available pizzas)
+        //initialize the pizzaList (the menu containing all available pizzas)
+        PizzaList.createPizzaList();
 
         //generate some orders to put in our order list
-        OrderList testOrderList = new OrderList();
         generateRandomOrders(5);
-        testOrderList.printListOfOrders();
 
         //start the main menu
         Menu menu = new Menu();
@@ -50,6 +49,4 @@ public class Main {
             testOrderList.addToListOfOrders(generatedOrder);
         }
     }
-
-
 }

@@ -31,7 +31,6 @@ public class Menu {
         System.out.println(">> Press 5 to complete order <<");
         System.out.println(">> Press 6 to exit <<");
 
-
             //Switch statements
             switch (getUserInput()) {
                 case 1:
@@ -75,6 +74,7 @@ public class Menu {
                 case 4:
                     //Prints the pizzaList which is called through the controller
                     controller.printPizzaList();
+                    mainMenu();
                     break;
 
                 case 5:

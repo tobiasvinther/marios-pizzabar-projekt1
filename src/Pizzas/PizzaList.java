@@ -33,10 +33,6 @@ public class PizzaList {
         }
     }
 
-    public ArrayList<Pizza> getPizzaList() {
-        return pizzaList;
-    }
-
     //prints the ID, name and price of all the pizzas for sale, like a menu
     public void printPizzaList() {
         for (Pizza pizza : pizzaList) {

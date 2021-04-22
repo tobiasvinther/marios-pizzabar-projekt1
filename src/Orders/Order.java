@@ -24,13 +24,6 @@ public class Order {
         orderCounter++;
     }
 
-    //Constructor. Never used though
-    public Order(String nameOfCustomer, int totalPizzas, LocalTime pickupTime) {
-        this.nameOfCustomer = nameOfCustomer;
-        this.totalPizzas = totalPizzas;
-        this.pickupTime = pickupTime;
-    }
-
     //getters and setters
     public ArrayList<Pizza> getPizzasInThisOrder() {
         return this.pizzasInThisOrder;

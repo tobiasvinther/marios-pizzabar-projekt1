@@ -11,14 +11,6 @@ public class OrderList {
     private final int COOK_TIME = 10; //minutes to cook one pizza
     private static ArrayList<Order> listOfOrders = new ArrayList<>(); //static because we only want one to exist
 
-    public int getWaitTime() {
-        return waitTime;
-    }
-
-    public ArrayList<Order> getListOfOrders() {
-        return listOfOrders;
-    }
-
     //prints all the orders in the order list
     public void printListOfOrders() {
         calculateWaitTime();
@@ -34,7 +26,6 @@ public class OrderList {
         Statistics.allOrders.add(thisOrder);
     }
 
-
     //remove order from list of orders (by ID)
     public void removeFromListOfOrders(int orderIDToRemove) {
 
@@ -43,24 +34,11 @@ public class OrderList {
         for(Order order : listOfOrders) {
             if(order.getOrderID() == orderIDToRemove) {
                 tempOrder = order; //if order with this orderID is on the orderList, set tempOrder to this order
-                //listOfOrders.remove(order);
-                //System.out.println("Removed order #" + orderIDToRemove);
             }
         }
         listOfOrders.remove(tempOrder); //delete tempOrder which is now the order with the orderID from the parameter
         System.out.println("Removed order #" + orderIDToRemove);
 
-    }
-
-    //remove by customer name
-    //warning: this will likely throw an exception
-    public void removeFromListOfOrders(String nameOfCustomer) {
-        for(Order order : listOfOrders) {
-            if(order.getNameOfCustomer().equals(nameOfCustomer)) {
-                listOfOrders.remove(order);
-                System.out.println("Removed order of customer: " + nameOfCustomer);
-            }
-        }
     }
 
     //call to calculate waiting time (in minutes) based on how many pizzas are currently waiting to be made
@@ -82,5 +60,4 @@ public class OrderList {
         //System.out.println(time.truncatedTo(ChronoUnit.MINUTES));
         return time;
     }
-
 }

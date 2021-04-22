@@ -33,18 +33,13 @@ public class Controller {
         order.setComment(comment);
     }
 
-    //returns pickuptime for an order and puts it in the list of orders
+    //returns pickupTime for an order and puts it in the list of orders
     public LocalTime getPickupTime(Order order) {
         orderList.calculateWaitTime();
         LocalTime time = orderList.calculateTimeToPickup();
         order.setPickupTime(time);
         orderList.addToListOfOrders(order);
         return order.getPickupTime();
-    }
-
-    //remove with name. Not used
-    public void removeFromListOfOrders(String nameOfCustomer) {
-        orderList.removeFromListOfOrders(nameOfCustomer);
     }
 
     //remove with order ID
